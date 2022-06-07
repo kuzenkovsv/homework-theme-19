@@ -1,0 +1,6 @@
+D:\Библиотека\skillbox\Обучение\1. C#\19. Паттерны\homework-theme-19\Animals\bin\Debug\Animals.dll
+D:\Библиотека\skillbox\Обучение\1. C#\19. Паттерны\homework-theme-19\Animals\bin\Debug\Animals.pdb
+D:\Библиотека\skillbox\Обучение\1. C#\19. Паттерны\homework-theme-19\Animals\obj\Debug\Animals.csproj.CoreCompileInputs.cache
+D:\Библиотека\skillbox\Обучение\1. C#\19. Паттерны\homework-theme-19\Animals\obj\Debug\Animals.dll
+D:\Библиотека\skillbox\Обучение\1. C#\19. Паттерны\homework-theme-19\Animals\obj\Debug\Animals.pdb
+D:\Библиотека\skillbox\Обучение\1. C#\19. Паттерны\homework-theme-19\Animals\obj\Debug\Animals.csproj.AssemblyReference.cache

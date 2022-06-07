@@ -1,0 +1,11 @@
+D:\Библиотека\skillbox\Обучение\1. C#\19. Паттерны\homework-theme-19\Save\bin\Debug\Save.dll
+D:\Библиотека\skillbox\Обучение\1. C#\19. Паттерны\homework-theme-19\Save\bin\Debug\Save.pdb
+D:\Библиотека\skillbox\Обучение\1. C#\19. Паттерны\homework-theme-19\Save\bin\Debug\Animals.dll
+D:\Библиотека\skillbox\Обучение\1. C#\19. Паттерны\homework-theme-19\Save\bin\Debug\Newtonsoft.Json.dll
+D:\Библиотека\skillbox\Обучение\1. C#\19. Паттерны\homework-theme-19\Save\bin\Debug\Animals.pdb
+D:\Библиотека\skillbox\Обучение\1. C#\19. Паттерны\homework-theme-19\Save\bin\Debug\Newtonsoft.Json.xml
+D:\Библиотека\skillbox\Обучение\1. C#\19. Паттерны\homework-theme-19\Save\obj\Debug\Save.csproj.AssemblyReference.cache
+D:\Библиотека\skillbox\Обучение\1. C#\19. Паттерны\homework-theme-19\Save\obj\Debug\Save.csproj.CoreCompileInputs.cache
+D:\Библиотека\skillbox\Обучение\1. C#\19. Паттерны\homework-theme-19\Save\obj\Debug\Save.csproj.CopyComplete
+D:\Библиотека\skillbox\Обучение\1. C#\19. Паттерны\homework-theme-19\Save\obj\Debug\Save.dll
+D:\Библиотека\skillbox\Обучение\1. C#\19. Паттерны\homework-theme-19\Save\obj\Debug\Save.pdb

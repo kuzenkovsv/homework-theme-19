@@ -1,0 +1,9 @@
+D:\Библиотека\skillbox\Обучение\1. C#\19. Паттерны\homework-theme-19\Factory\bin\Debug\Factory.dll
+D:\Библиотека\skillbox\Обучение\1. C#\19. Паттерны\homework-theme-19\Factory\bin\Debug\Factory.pdb
+D:\Библиотека\skillbox\Обучение\1. C#\19. Паттерны\homework-theme-19\Factory\bin\Debug\Animals.dll
+D:\Библиотека\skillbox\Обучение\1. C#\19. Паттерны\homework-theme-19\Factory\bin\Debug\Animals.pdb
+D:\Библиотека\skillbox\Обучение\1. C#\19. Паттерны\homework-theme-19\Factory\obj\Debug\Factory.csproj.AssemblyReference.cache
+D:\Библиотека\skillbox\Обучение\1. C#\19. Паттерны\homework-theme-19\Factory\obj\Debug\Factory.csproj.CoreCompileInputs.cache
+D:\Библиотека\skillbox\Обучение\1. C#\19. Паттерны\homework-theme-19\Factory\obj\Debug\Factory.csproj.CopyComplete
+D:\Библиотека\skillbox\Обучение\1. C#\19. Паттерны\homework-theme-19\Factory\obj\Debug\Factory.dll
+D:\Библиотека\skillbox\Обучение\1. C#\19. Паттерны\homework-theme-19\Factory\obj\Debug\Factory.pdb

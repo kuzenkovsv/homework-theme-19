@@ -1,0 +1,105 @@
+﻿<Window x:Class="WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Name="ZOO">
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="20.379"/>
+            <RowDefinition Height="29.621"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="273*"/>
+            <ColumnDefinition Width="577*"/>
+        </Grid.ColumnDefinitions>
+
+        <Menu Grid.Row="0" Height="25" Grid.Column="0" VerticalAlignment="Center" 
+              HorizontalAlignment="Left">
+            <MenuItem Header="Файл">
+                <MenuItem Name="JSON" Header="Сохранить зоопарк в JSON">
+                    <MenuItem.Icon>
+                        <Image Source="Images\load.png"></Image>
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Name="XML" Header="Сохранить зоопарк в XML">
+                    <MenuItem.Icon>
+                        <Image Source="Images\load.png"></Image>
+                    </MenuItem.Icon>
+                </MenuItem>
+                <Separator />
+                <MenuItem  Name="Exit" Header="Выход">
+                    <MenuItem.Icon>
+                        <Image Source="Images\exit.png"></Image>
+                    </MenuItem.Icon>
+                </MenuItem>
+            </MenuItem>
+        </Menu>
+
+        <GroupBox Grid.Row="1" Grid.Column="0"
+                  Name="AddAnimals"
+                  Header="Добавить животное"
+                  Margin="5"
+                  BorderBrush="CadetBlue" 
+                  BorderThickness="1">
+            <StackPanel Orientation="Vertical">
+                
+                <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" 
+                   Text="Тип животного" VerticalAlignment="Center" Padding="10"/>
+                <ComboBox Name="cbAnimalType" HorizontalAlignment="Center" Width="170" Margin="5,5,5,5">
+                    <ComboBoxItem Content="Млекопитающие" IsSelected="True"/>
+                    <ComboBoxItem Content="Птицы"/>
+                    <ComboBoxItem Content="Земноводные"/>
+                    <ComboBoxItem Content="Новый тип"/>
+                </ComboBox>
+                
+                <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" 
+                   Text="Название животного" VerticalAlignment="Center" Padding="10"/>
+                <TextBox Name="textAnimalName" 
+                         HorizontalAlignment="Center" 
+                         Height="23" Width="170" Text="" Margin="5,5,5,5"/>
+                
+                <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" 
+                   Text="Кличка животного" VerticalAlignment="Center" Padding="10"/>
+                <TextBox Name="textAnimalNickName" 
+                         HorizontalAlignment="Center" 
+                         Height="23" Width="170" Text="" Margin="5,5,5,5"/>
+                
+                <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" 
+                   Text="Возраст животного" VerticalAlignment="Center" Padding="10"/>
+                <ComboBox Name="cbAnimalAge" 
+                          HorizontalAlignment="Center" 
+                          Width="170" Margin="5,5,5,5">
+                    <ComboBoxItem Content="1" IsSelected="True"/>
+                    <ComboBoxItem Content="2"/>
+                    <ComboBoxItem Content="3"/>
+                </ComboBox>
+                
+            </StackPanel>
+        </GroupBox>
+
+        <DataGrid x:Name="Animals" Grid.Row="1" Grid.Column="1" 
+                  AutoGenerateColumns="False" IsReadOnly="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Тип" Width="150" Binding="{Binding TypeAnimals}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Название" Width="150" Binding="{Binding Name}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Кличка" Width="150" Binding="{Binding NickName}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Возраст" Width="75" Binding="{Binding Age}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Button Name="Add" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center"
+                Content="Добавить" Margin="35,15,35,15" Grid.RowSpan="2"  
+                Grid.Column="0" Width="140"/>
+
+        <Button Name="Del" Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center"
+                Content="Удалить" Margin="35,15,35,15" Grid.RowSpan="2" 
+                Grid.Column="1" Width="140"/>
+
+    </Grid>
+</Window>
