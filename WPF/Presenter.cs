@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
 
@@ -23,7 +24,23 @@ namespace WPF
 
         public void AddAnimal()
         {
-            model.otherZOO.Add(AnimalsFactory.GetAnimal(view.AnimalType, view.AnimalName, view.AnimalNickName, view.AnimalAge));
+            var checker = new Regex(@"\G[А-Яа-я]{4,}$");
+            if (checker.IsMatch(view.AnimalName) & checker.IsMatch(view.AnimalNickName))
+            {
+                model.otherZOO.Add(AnimalsFactory.GetAnimal(view.AnimalType, view.AnimalName, view.AnimalNickName, view.AnimalAge));
+                MessageBox.Show($"{view.AnimalName} по кличке {view.AnimalNickName} успешно поселилось(ась/ся) в зоопарке",
+              "Успешное добавление нового питомца",
+              MessageBoxButton.OK,
+              MessageBoxImage.Information);
+            }
+            else
+            {
+                MessageBox.Show($"Необходимо что бы поля \"Название животного\" и \"Кличка животного\" были заполнены " +
+                    $"прописными или строчными буквами русского алфавита в количестве не менее 4-х",
+               "Ошибка",
+               MessageBoxButton.OK,
+               MessageBoxImage.Error);
+            }
         }
 
         public void DelAnimal()
